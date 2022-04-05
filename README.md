@@ -28,11 +28,13 @@ InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault
 }
 ```
 
+### Execute
+
 ### Code Style
 
 #### GNU
 
-- setting.json
+- settings.json
 
 ```json
 {
@@ -51,7 +53,7 @@ if (true)
 
 #### K&R
 
-- setting.json
+- settings.json
 
 ```json
 {
