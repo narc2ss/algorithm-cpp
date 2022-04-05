@@ -30,6 +30,9 @@ InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault
 
 ### Execute
 
+- mac
+  - control + option + N
+
 ### Code Style
 
 #### GNU
