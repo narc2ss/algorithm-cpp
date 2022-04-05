@@ -18,12 +18,12 @@ InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault
 
 ### Settings
 
-```json
-# settings.json
+- settings.json
 
+```json
 {
   "code-runner.executorMap": {
-      "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
   }
 }
 ```
@@ -45,7 +45,7 @@ InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault
 ```cpp
 if (true)
 {
-  cout << "Hello world;
+  cout << "Hello world";
 }
 ```
 
