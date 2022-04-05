@@ -36,7 +36,7 @@ InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault
 
 ```json
 {
-  "C_Cpp.clang_format_fallbackStyle": "BasedOnStyle: Visual Studio"
+  "C_Cpp.clang_format_fallbackStyle": "Visual Studio"
 }
 ```
 
@@ -55,7 +55,7 @@ if (true)
 
 ```json
 {
-  "C_Cpp.clang_format_fallbackStyle": "BasedOnStyle: Google"
+  "C_Cpp.clang_format_fallbackStyle": "Google"
 }
 ```
 
