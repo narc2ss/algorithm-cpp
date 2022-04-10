@@ -2,16 +2,16 @@
 
 using namespace std;
 
-int heap[9] = {7, 6, 5, 8, 3, 5, 9, 1, 6};
-int number = 9;
-
 int main(void) {
+    int heap[9] = {7, 6, 5, 8, 3, 5, 9, 1, 6};
+    int number = 9, temp;
+
     for (int i = 1; i < number; i++) {
         int c = i;
         do {
             int root = (c - 1) / 2;
             if (heap[root] < heap[c]) {
-                int temp = heap[root];
+                temp = heap[root];
                 heap[root] = heap[c];
                 heap[c] = temp;
             }
@@ -20,18 +20,19 @@ int main(void) {
     }
 
     for (int i = number - 1; i >= 0; i--) {
-        int temp = heap[0];
+        temp = heap[0];
         heap[0] = heap[i];
         heap[i] = temp;
         int root = 0;
-        int c = 1;
+        int c;
         do {
-            c = 2 * root + 1;
+            c = root * 2 + 1;
             if (heap[c] < heap[c + 1] && c < i - 1) {
                 c++;
             }
+
             if (heap[root] < heap[c] && c < i) {
-                int temp = heap[root];
+                temp = heap[root];
                 heap[root] = heap[c];
                 heap[c] = temp;
             }
@@ -43,5 +44,4 @@ int main(void) {
         cout << heap[i] << " ";
     }
     cout << endl;
-    return 0;
 }
